@@ -4,9 +4,7 @@
 ## NPM ##
 npm
 npm-debug.log
-proxy/node_modules/
-rus-similar-listings/node_modules/
-sam-booking/node_modules/
+node_modules/
 
 pids
 *.pid
@@ -21,3 +19,8 @@ coverage
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
+
+# Compiled Dirs (http://nodejs.org/api/addons.html)
+build/
+dist/
+
