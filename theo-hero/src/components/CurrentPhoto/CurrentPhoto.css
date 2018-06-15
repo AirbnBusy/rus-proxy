@@ -1,0 +1,7 @@
+.main-image-box {
+    object-fit: cover;
+    height: 70vh;
+    width: 52.5%;
+    margin: 0 auto;
+    overflow: hidden;
+}

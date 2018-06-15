@@ -7,6 +7,7 @@ npm-debug.log
 proxy/node_modules/
 rus-similar-listings/node_modules/
 sam-booking/node_modules/
+theo-hero/node_modules/
 
 pids
 *.pid

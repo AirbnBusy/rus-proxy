@@ -1,0 +1,9 @@
+.container {
+    z-index: 101;
+    position: fixed;
+    width: 100%;
+}
+
+.close-control-bar {
+    height: 5.25rem;
+}

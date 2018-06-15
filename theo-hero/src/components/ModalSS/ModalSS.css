@@ -1,0 +1,39 @@
+.container {
+    z-index: 101;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    z-index: 101;
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-share {
+    top: 16px;
+    right: 327px;
+}
+
+.close-save {
+    top: 24px;
+    right: 510px;
+}
+
+.thumb-off {
+    display: none;
+}
+
+.thumb-on {
+    display: block;
+    position: absolute;
+    height: 82px;
+    width: 106px;
+    left: 32px;
+    bottom: 29px;
+}
