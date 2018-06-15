@@ -1,0 +1,27 @@
+{
+  "name": "rus-airbnbusy-proxy",
+  "version": "1.0.0",
+  "description": "Proxy server for the airbnbusy SOA project",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AirbnBusy/rus-proxy.git"
+  },
+  "author": "Ruslan Farutdinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AirbnBusy/rus-proxy/issues"
+  },
+  "homepage": "https://github.com/AirbnBusy/rus-proxy#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
