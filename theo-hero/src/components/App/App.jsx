@@ -21,8 +21,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const listingID = global.window.location.pathname.match(/(\d{4,4})/)[1];
-    axios.get(`http://localhost:3003/api/listings/${listingID}/photos`)
+    axios.defaults.baseURL = 'http://localhost:3003';
+    // const listingID = document.location.href.slice(28, 32);
+    const listingID = global.window.location.pathname.match(/(rooms|listings)\/(\d{4,4})/)[2];
+    axios.get(`/api/listings/${listingID}/photos`)
       .then(photosInfo => this.setState({ photosInfo: photosInfo.data }))
       .catch(err => console.log('ERROR: ', err.message));
   }

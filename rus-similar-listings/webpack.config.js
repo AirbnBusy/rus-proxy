@@ -6,7 +6,7 @@ module.exports = {
 	entry: `${SRC_DIR}/index.jsx`,
 	output: {
 		path: DIST_DIR,
-		filename: 'similar-listings.js'
+		filename: 'similar-listings-bundle.js'
 	},
 	module: {
 		rules: [

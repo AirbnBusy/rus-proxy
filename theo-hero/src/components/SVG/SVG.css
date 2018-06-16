@@ -1,3 +1,8 @@
+svg {
+  position: absolute;
+  overflow: visible;
+}
+
 .share path {
     fill: #a3a3a3;
 }
@@ -19,6 +24,12 @@
 .right {
     fill: #FFF;
     transform: scale(15);
+}
+
+.x-box {
+    transform: scale(.5);
+    transform-origin: 3660px 1px;
+    cursor: pointer;
 }
 
 .left-box {

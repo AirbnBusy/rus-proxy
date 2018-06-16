@@ -1,13 +1,12 @@
 const express = require('express');
-const cors = require('cors');
-
-const app = express();
 const path = require('path');
+const cors = require('cors');
 const { selectImageURIsByListingID } = require('../database/db-func');
 
-app.use(cors());
+const app = express();
 
-// app.use('/api/listings/:id', express.static(path.resolve(__dirname, '../public/')));
+app.use(cors());
+app.use('/api/listings/:id', express.static(path.resolve(__dirname, '../public/')));
 app.use('/api/listings/:id', express.static(path.resolve(__dirname, '../dist/')));
 
 app.get('/api/listings/:listingID/photos', (req, res) => {

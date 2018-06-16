@@ -7,6 +7,7 @@ const app = express();
 
 app.use(cors());
 
+app.use('/', express.static(path.join(__dirname, '/../client/dist')));
 app.use('/rooms/:id', express.static(path.join(__dirname, '/../client/dist')));
 
 app.get('/api/similar-listings/:id', (req, res) => {

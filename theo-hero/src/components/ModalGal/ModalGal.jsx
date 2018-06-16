@@ -16,7 +16,7 @@ class ModalGal extends Component {
     this.nextPic = this.nextPic.bind(this);
   }
 
-  previousPic(e) {
+  previousPic() {
     this.state.i > 0 ?
     this.setState(prevState => ({ i: --prevState.i })) : this.setState({ i: this.props.photosInfo.length -1 });
   }
